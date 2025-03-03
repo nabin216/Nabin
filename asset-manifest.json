@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Nabin/static/css/main.ce92a266.css",
-    "main.js": "/Nabin/static/js/main.afa21810.js",
+    "main.css": "/Nabin/static/css/main.4d1494f8.css",
+    "main.js": "/Nabin/static/js/main.12cbd77d.js",
     "static/js/453.1407b060.chunk.js": "/Nabin/static/js/453.1407b060.chunk.js",
     "static/media/snr_online.png": "/Nabin/static/media/snr_online.97a05b1b69da3273ddd2.png",
     "static/media/DIAGRAM - ENIGMA HUNTERS_page-0001.jpg": "/Nabin/static/media/DIAGRAM - ENIGMA HUNTERS_page-0001.dde36076b8f0f0e872e0.jpg",
@@ -10,12 +10,12 @@
     "static/media/nabin.jpg": "/Nabin/static/media/nabin.42eab503aff7e57a8f06.jpg",
     "service-worker.js": "/Nabin/service-worker.js",
     "index.html": "/Nabin/index.html",
-    "main.ce92a266.css.map": "/Nabin/static/css/main.ce92a266.css.map",
-    "main.afa21810.js.map": "/Nabin/static/js/main.afa21810.js.map",
+    "main.4d1494f8.css.map": "/Nabin/static/css/main.4d1494f8.css.map",
+    "main.12cbd77d.js.map": "/Nabin/static/js/main.12cbd77d.js.map",
     "453.1407b060.chunk.js.map": "/Nabin/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce92a266.css",
-    "static/js/main.afa21810.js"
+    "static/css/main.4d1494f8.css",
+    "static/js/main.12cbd77d.js"
   ]
 }
