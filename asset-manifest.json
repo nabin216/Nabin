@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Nabin/static/css/main.ce92a266.css",
+    "main.js": "/Nabin/static/js/main.049ceb89.js",
+    "static/js/453.1407b060.chunk.js": "/Nabin/static/js/453.1407b060.chunk.js",
+    "static/media/snr_online.png": "/Nabin/static/media/snr_online.97a05b1b69da3273ddd2.png",
+    "static/media/DIAGRAM - ENIGMA HUNTERS_page-0001.jpg": "/Nabin/static/media/DIAGRAM - ENIGMA HUNTERS_page-0001.dde36076b8f0f0e872e0.jpg",
+    "static/media/smart_india_project.png": "/Nabin/static/media/smart_india_project.944dbfd152a4f60a529e.png",
+    "static/media/Nabin_s_Academic_CV.pdf": "/Nabin/static/media/Nabin_s_Academic_CV.ef0e39ff178c1a913583.pdf",
+    "static/media/nabin.jpg": "/Nabin/static/media/nabin.42eab503aff7e57a8f06.jpg",
+    "service-worker.js": "/Nabin/service-worker.js",
+    "index.html": "/Nabin/index.html",
+    "main.ce92a266.css.map": "/Nabin/static/css/main.ce92a266.css.map",
+    "main.049ceb89.js.map": "/Nabin/static/js/main.049ceb89.js.map",
+    "453.1407b060.chunk.js.map": "/Nabin/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ce92a266.css",
+    "static/js/main.049ceb89.js"
+  ]
+}
