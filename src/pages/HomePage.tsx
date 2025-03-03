@@ -3,22 +3,28 @@ import Layout from '../components/layout/Layout';
 import Hero from '../components/sections/Hero';
 import About from '../components/sections/About';
 import Projects from '../components/sections/Projects';
-import Research from '../components/sections/Research';
 import Experience from '../components/sections/Experience';
+import Research from '../components/sections/Research';
 import Contact from '../components/sections/Contact';
-import AIChatbot from '../components/sections/AIChatbot';
+import SEO from '../components/SEO';
 
 const HomePage: React.FC = () => {
   return (
-    <Layout>
-      <Hero />
-      <About />
-      <Projects />
-      <Research />
-      <Experience />
-      <Contact />
-      <AIChatbot />
-    </Layout>
+    <>
+      <SEO 
+        title="Nabin's Portfolio - Full Stack Developer & ML Engineer"
+        description="Welcome to my portfolio. I am a passionate developer specializing in full-stack development, machine learning, and software engineering. Explore my projects and experience."
+        keywords="full stack developer, machine learning engineer, software engineer, React, TypeScript, Python, portfolio"
+      />
+      <Layout>
+        <Hero />
+        <About />
+        <Experience />
+        <Projects />
+        <Research />
+        <Contact />
+      </Layout>
+    </>
   );
 };
 
