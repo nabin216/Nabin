@@ -7,6 +7,9 @@ interface SEOProps {
   keywords?: string;
   image?: string;
   url?: string;
+  type?: 'website' | 'article' | 'portfolio' | 'profile';
+  name?: string;
+  role?: string;
 }
 
 const SEO: React.FC<SEOProps> = ({
@@ -15,7 +18,25 @@ const SEO: React.FC<SEOProps> = ({
   keywords = "web development, software engineer, machine learning, React, TypeScript, portfolio",
   image = "/og-image.jpg", // You'll need to add this image in your public folder
   url = "https://nabin216.github.io/PortFolio",
+  type = "website",
+  name = "Nabin",
+  role = "Full Stack Developer & ML Engineer"
 }) => {
+  // Structured data for better SEO
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": name,
+    "url": url,
+    "image": image,
+    "jobTitle": role,
+    "description": description,
+    "sameAs": [
+      "https://github.com/nabin216",
+      // Add your other social media profiles here
+    ]
+  };
+
   return (
     <Helmet>
       {/* Basic meta tags */}
@@ -28,7 +49,7 @@ const SEO: React.FC<SEOProps> = ({
       <meta property="og:description" content={description} />
       <meta property="og:image" content={image} />
       <meta property="og:url" content={url} />
-      <meta property="og:type" content="website" />
+      <meta property="og:type" content={type} />
 
       {/* Twitter Card meta tags */}
       <meta name="twitter:card" content="summary_large_image" />
@@ -40,10 +61,25 @@ const SEO: React.FC<SEOProps> = ({
       <meta name="robots" content="index, follow" />
       <meta name="language" content="English" />
       <meta name="revisit-after" content="7 days" />
-      <meta name="author" content="Nabin" />
+      <meta name="author" content={name} />
+
+      {/* Mobile optimization */}
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="theme-color" content="#FAA500" />
+      <meta name="mobile-web-app-capable" content="yes" />
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+
+      {/* Performance optimization hints */}
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
 
       {/* Canonical URL */}
       <link rel="canonical" href={url} />
+
+      {/* JSON-LD structured data */}
+      <script type="application/ld+json">
+        {JSON.stringify(structuredData)}
+      </script>
     </Helmet>
   );
 };

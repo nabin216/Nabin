@@ -1,0 +1,6 @@
+Contact: mailto:your-email@example.com
+Expires: 2025-12-31T23:59:59Z
+Preferred-Languages: en
+Canonical: https://nabin216.github.io/.well-known/security.txt
+Policy: https://nabin216.github.io/security-policy
+Hiring: https://nabin216.github.io/careers 

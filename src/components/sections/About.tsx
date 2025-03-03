@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaGraduationCap, FaLaptopCode, FaFlask, FaAward } from 'react-icons/fa';
+import { FaGraduationCap, FaLaptopCode, FaFlask, FaAward, FaTrophy } from 'react-icons/fa';
 import { IconWrapper } from '../../utils/IconWrapper';
 
 const About: React.FC = () => {
@@ -112,33 +112,18 @@ const About: React.FC = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
             viewport={{ once: true }}
-            className="bg-white p-6 rounded-lg shadow-md"
+            className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md"
           >
             <div className="flex items-center mb-4">
               <IconWrapper icon={FaFlask} className="text-accent text-3xl mr-4" />
-              <h3 className="text-xl font-bold text-primary">Research Interests</h3>
+              <h3 className="text-xl font-bold text-primary dark:text-white">Research Interests</h3>
             </div>
-            <ul className="space-y-2">
-              <li className="flex items-start">
-                <span className="text-accent mr-2">•</span>
-                <span>Cybersecurity threat detection and mitigation strategies</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-accent mr-2">•</span>
-                <span>Blockchain technology for secure certificate validation</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-accent mr-2">•</span>
-                <span>Machine learning applications in network security</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-accent mr-2">•</span>
-                <span>Secure software development practices</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-accent mr-2">•</span>
-                <span>LLM applications in cybersecurity</span>
-              </li>
+            <ul className="list-disc pl-5 space-y-2 text-gray-700 dark:text-gray-300">
+              <li>Cybersecurity threat detection and mitigation strategies</li>
+              <li>Blockchain technology for secure certificate validation</li>
+              <li>Machine learning applications in network security</li>
+              <li>Secure software development practices</li>
+              <li>LLM applications in cybersecurity</li>
             </ul>
           </motion.div>
 
@@ -147,25 +132,19 @@ const About: React.FC = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
             viewport={{ once: true }}
-            className="bg-white p-6 rounded-lg shadow-md"
+            className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md"
           >
             <div className="flex items-center mb-4">
-              <IconWrapper icon={FaAward} className="text-accent text-3xl mr-4" />
-              <h3 className="text-xl font-bold text-primary">Achievements</h3>
+              <IconWrapper icon={FaTrophy} className="text-accent text-3xl mr-4" />
+              <h3 className="text-xl font-bold text-primary dark:text-white">Achievements</h3>
             </div>
-            <ul className="space-y-3">
-              <li>
-                <p className="font-semibold">2nd Position in Kavach National Hackathon</p>
-                <p className="text-gray-600">Ministry of Home Affairs, India (Nov 2023)</p>
-              </li>
-              <li>
-                <p className="font-semibold">Study in India Scholarship</p>
-                <p className="text-gray-600">Fully funded scholarship for academic excellence (2021-2025)</p>
-              </li>
-              <li>
-                <p className="font-semibold">Technical Coordinator</p>
-                <p className="text-gray-600">Winter School on Speech and Audio Processing (Nov 2024)</p>
-              </li>
+            <ul className="list-disc pl-5 space-y-2 text-gray-700 dark:text-gray-300">
+              <li>2nd Position in Kavach National Hackathon</li>
+              <li>Ministry of Home Affairs, India (Nov 2023)</li>
+              <li>Study in India Scholarship</li>
+              <li>Fully funded scholarship for academic excellence (2021-2025)</li>
+              <li>Technical Coordinator</li>
+              <li>Winter School on Speech and Audio Processing (Nov 2024)</li>
             </ul>
           </motion.div>
         </div>

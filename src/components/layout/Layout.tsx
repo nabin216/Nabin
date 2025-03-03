@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import AIChatbot from '../sections/AIChatbot';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -14,6 +15,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         {children}
       </main>
       <Footer />
+      <AIChatbot />
     </div>
   );
 };

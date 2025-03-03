@@ -115,14 +115,14 @@ const AIChatbot: React.FC = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="fixed bottom-24 right-6 w-80 sm:w-96 bg-white rounded-lg shadow-xl z-50 overflow-hidden flex flex-col"
+            className="fixed bottom-24 right-6 w-80 sm:w-96 bg-white dark:bg-gray-800 rounded-lg shadow-xl z-50 overflow-hidden flex flex-col"
             style={{ maxHeight: 'calc(100vh - 120px)' }}
             initial={{ opacity: 0, y: 50, scale: 0.9 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 50, scale: 0.9 }}
           >
             {/* Chat header */}
-            <div className="bg-primary text-white p-4 flex justify-between items-center">
+            <div className="bg-primary dark:bg-gray-900 text-white p-4 flex justify-between items-center">
               <div className="flex items-center">
                 <IconWrapper icon={FaRobot} className="h-6 w-6 mr-2" />
                 <h3 className="font-bold">AI Assistant</h3>
@@ -137,7 +137,7 @@ const AIChatbot: React.FC = () => {
             </div>
             
             {/* Chat messages */}
-            <div className="flex-1 overflow-y-auto p-4 bg-gray-50">
+            <div className="flex-1 overflow-y-auto p-4 bg-gray-50 dark:bg-gray-700">
               {messages.map(message => (
                 <div
                   key={message.id}
@@ -147,7 +147,7 @@ const AIChatbot: React.FC = () => {
                     className={`max-w-3/4 rounded-lg p-3 ${
                       message.sender === 'user'
                         ? 'bg-accent text-white'
-                        : 'bg-white text-gray-800 border border-gray-200'
+                        : 'bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 border border-gray-200 dark:border-gray-700'
                     }`}
                   >
                     <p>{message.text}</p>
@@ -160,7 +160,7 @@ const AIChatbot: React.FC = () => {
               
               {isTyping && (
                 <div className="flex justify-start mb-4">
-                  <div className="bg-white text-gray-800 rounded-lg p-3 border border-gray-200">
+                  <div className="bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-lg p-3 border border-gray-200 dark:border-gray-700">
                     <div className="flex items-center">
                       <IconWrapper icon={FaSpinner} className="animate-spin h-4 w-4 mr-2" />
                       <p>AI is typing...</p>
@@ -173,14 +173,14 @@ const AIChatbot: React.FC = () => {
             </div>
             
             {/* Chat input */}
-            <form onSubmit={handleSendMessage} className="border-t border-gray-200 p-4 bg-white">
+            <form onSubmit={handleSendMessage} className="border-t border-gray-200 dark:border-gray-700 p-4 bg-white dark:bg-gray-800">
               <div className="flex">
                 <input
                   type="text"
                   value={inputValue}
                   onChange={(e) => setInputValue(e.target.value)}
                   placeholder="Ask me anything about Asadur..."
-                  className="flex-1 border border-gray-300 rounded-l-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-accent"
+                  className="flex-1 border border-gray-300 dark:border-gray-600 rounded-l-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-accent dark:bg-gray-700 dark:text-gray-200 dark:placeholder-gray-400"
                 />
                 <button
                   type="submit"

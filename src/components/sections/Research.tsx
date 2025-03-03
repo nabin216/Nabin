@@ -48,7 +48,7 @@ const publications: Publication[] = [
 
 const Research: React.FC = () => {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-gray-50 dark:bg-dark-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -82,24 +82,23 @@ const Research: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-white p-6 rounded-lg shadow-md"
+              className="bg-white dark:bg-accent p-6 rounded-lg shadow-md"
             >
-              <h3 className="text-xl font-bold text-primary mb-2">{pub.title}</h3>
-              <p className="text-gray-700 mb-2">{pub.authors}</p>
-              <p className="text-gray-600 italic mb-4">
+              <h3 className="text-xl font-bold text-primary dark:text-white mb-2">{pub.title}</h3>
+              <p className="text-gray-700 dark:text-gray-300 mb-2">{pub.authors}</p>
+              <p className="text-gray-600 dark:text-gray-400 italic mb-4">
                 {pub.conference}, {pub.year}
               </p>
-              <p className="text-gray-600 mb-4">{pub.abstract}</p>
+              <p className="text-gray-700 dark:text-gray-300 mb-4">{pub.abstract}</p>
               <div className="flex space-x-4">
                 {pub.pdfLink && (
                   <a 
                     href={pub.pdfLink} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="flex items-center text-accent hover:text-blue-700 transition-colors"
+                    className="text-primary dark:text-accent hover:text-blue-700 dark:hover:text-blue-400 transition-colors duration-300"
                   >
-                    <IconWrapper icon={FaFilePdf} className="h-5 w-5 mr-2" />
-                    <span>PDF</span>
+                    View PDF
                   </a>
                 )}
                 {pub.doiLink && (
@@ -107,10 +106,9 @@ const Research: React.FC = () => {
                     href={pub.doiLink} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="flex items-center text-accent hover:text-blue-700 transition-colors"
+                    className="text-primary dark:text-accent hover:text-blue-700 dark:hover:text-blue-400 transition-colors duration-300"
                   >
-                    <IconWrapper icon={FaExternalLinkAlt} className="h-4 w-4 mr-2" />
-                    <span>DOI</span>
+                    DOI Link
                   </a>
                 )}
               </div>
@@ -127,22 +125,22 @@ const Research: React.FC = () => {
         >
           <h3 className="text-xl font-bold text-primary mb-4">Research Interests</h3>
           <div className="flex flex-wrap justify-center gap-4">
-            <span className="bg-white text-primary px-4 py-2 rounded-full shadow-sm">
+            <span className="bg-white dark:bg-accent text-primary px-4 py-2 rounded-full shadow-sm">
               Cybersecurity
             </span>
-            <span className="bg-white text-primary px-4 py-2 rounded-full shadow-sm">
+            <span className="bg-white dark:bg-accent text-primary px-4 py-2 rounded-full shadow-sm">
               Blockchain Technology
             </span>
-            <span className="bg-white text-primary px-4 py-2 rounded-full shadow-sm">
+            <span className="bg-white dark:bg-accent text-primary px-4 py-2 rounded-full shadow-sm">
               AI in Security
             </span>
-            <span className="bg-white text-primary px-4 py-2 rounded-full shadow-sm">
+            <span className="bg-white dark:bg-accent text-primary px-4 py-2 rounded-full shadow-sm">
               Cloud Security
             </span>
-            <span className="bg-white text-primary px-4 py-2 rounded-full shadow-sm">
+            <span className="bg-white dark:bg-accent text-primary px-4 py-2 rounded-full shadow-sm">
               Network Security
             </span>
-            <span className="bg-white text-primary px-4 py-2 rounded-full shadow-sm">
+            <span className="bg-white dark:bg-accent text-primary px-4 py-2 rounded-full shadow-sm">
               Secure Software Development
             </span>
           </div>
