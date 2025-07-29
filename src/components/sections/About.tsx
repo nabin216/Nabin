@@ -58,7 +58,7 @@ const About: React.FC = () => {
                   <div className="border-l-4 border-gradient-start pl-4">
                     <p className="font-semibold text-lg text-primary dark:text-white">B.Tech in Computer Science & Engineering</p>
                     <p className="text-gray-600 dark:text-gray-300">Koneru Lakshmaiah Education Foundation University</p>
-                    <p className="text-gradient-start dark:text-gradient-end font-medium">2021-2025 | CGPA: 8.94/10</p>
+                    <p className="text-gradient-start dark:text-gradient-end font-medium">2021-2025 | CGPA: 8.99/10 or (3.60/4)</p>
                   </div>
                 </li>
                 <li className="transform transition-transform duration-300 hover:translate-x-2">
